@@ -29,3 +29,4 @@ function submitGist() {
 
 var submitBtn = document.querySelector('button');
 submitBtn.addEventListener('click', submitGist);
+https://googlechrome.github.io/samples/fetch-api/fetch-post.html
