@@ -30,3 +30,23 @@ function submitGist() {
 var submitBtn = document.querySelector('button');
 submitBtn.addEventListener('click', submitGist);
 https://googlechrome.github.io/samples/fetch-api/fetch-post.html
+
+
+digitar o comando abaixo no SolicitacaoController
+
+import org.springframework.web.bind.annotation.DeleteMapping; 
+import org.springframework.web.bind.annotation.PathVariable;  
+
+@DeleteMapping("/solicitacao/{id}")
+public void removesolicitacao(@PathVariable("id") long id) {
+solicitaRepository.deleteById(id);
+}
+
+---------------------------------------------------------------------
+
+no postman colocar o metodo como DELETE
+http://localhost:8080/Solicitacao/id_da_solicitacao
+exemplo
+http://localhost:8080/Solicitacao/10 e clicar em send
+
+
